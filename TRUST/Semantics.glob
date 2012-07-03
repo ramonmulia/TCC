@@ -1,0 +1,126 @@
+FSemantics
+R62 SfLib <> <> lib
+R68 Syntax <> <> lib
+def 133 <> subst
+R144 SfLib <> id ind
+R153 Syntax <> term ind
+R165 Syntax <> term ind
+R185 Syntax <> term ind
+R215 Syntax <> tm_var constr
+R230 SfLib <> beq_id def
+R262 Syntax <> tm_app constr
+R276 Syntax <> tm_app constr
+R298 Semantics <> subst def
+R284 Semantics <> subst def
+R317 Syntax <> tm_abs constr
+R334 Syntax <> tm_abs constr
+R349 SfLib <> beq_id def
+R374 Semantics <> subst def
+R395 Syntax <> tm_trust constr
+R410 Syntax <> tm_trust constr
+R420 Semantics <> subst def
+R440 Syntax <> tm_distrust constr
+R458 Syntax <> tm_distrust constr
+R471 Semantics <> subst def
+R491 Syntax <> tm_check constr
+R506 Syntax <> tm_check constr
+R516 Semantics <> subst def
+R536 Syntax <> tm_if constr
+R554 Syntax <> tm_if constr
+R591 Semantics <> subst def
+R576 Semantics <> subst def
+R561 Semantics <> subst def
+R611 Syntax <> tm_true constr
+R629 Syntax <> tm_true constr
+R643 Syntax <> tm_false constr
+R661 Syntax <> tm_false constr
+ind 688 <> bvalue
+constr 717 <> v_true
+constr 743 <> v_false
+R697 Syntax <> term ind
+R726 Semantics <> bvalue ind
+R733 Syntax <> tm_true constr
+R753 Semantics <> bvalue ind
+R760 Syntax <> tm_false constr
+ind 781 <> absvalue
+constr 812 <> v_abs
+R792 Syntax <> term ind
+R836 Semantics <> absvalue ind
+R846 Syntax <> tm_abs constr
+def 875 <> value
+R911 Coq.Init.Logic "A \/ B" not
+R902 Semantics <> bvalue ind
+R914 Semantics <> absvalue ind
+R886 Syntax <> term ind
+R974 Semantics <> value def
+ind 992 <> step
+constr 1027 <> e_appabs
+constr 1121 <> e_app1
+constr 1199 <> e_app2
+constr 1289 <> e_iftrue
+constr 1345 <> e_iffalse
+constr 1403 <> e_if
+constr 1506 <> e_trust1
+constr 1579 <> e_distrust1
+constr 1661 <> e_check1
+constr 1734 <> e_trustv
+constr 1787 <> e_distrustv
+constr 1846 <> e_checkv
+R1007 Syntax <> term ind
+R999 Syntax <> term ind
+R1922 Semantics <> step ind
+R1096 Semantics "t '==>' t'" not
+R1070 Syntax <> tm_app constr
+R1078 Syntax <> tm_abs constr
+R1102 Semantics <> subst def
+R1057 Semantics <> value def
+R1177 Semantics "t '==>' t'" not
+R1164 Syntax <> tm_app constr
+R1181 Syntax <> tm_app constr
+R1153 Semantics "t '==>' t'" not
+R1267 Semantics "t '==>' t'" not
+R1254 Syntax <> tm_app constr
+R1271 Syntax <> tm_app constr
+R1243 Semantics "t '==>' t'" not
+R1228 Semantics <> value def
+R1334 Semantics "t '==>' t'" not
+R1314 Syntax <> tm_if constr
+R1320 Syntax <> tm_true constr
+R1392 Semantics "t '==>' t'" not
+R1371 Syntax <> tm_if constr
+R1377 Syntax <> tm_false constr
+R1460 Semantics "t '==>' t'" not
+R1445 Syntax <> tm_if constr
+R1464 Syntax <> tm_if constr
+R1434 Semantics "t '==>' t'" not
+R1558 Semantics "t '==>' t'" not
+R1546 Syntax <> tm_trust constr
+R1562 Syntax <> tm_trust constr
+R1535 Semantics "t '==>' t'" not
+R1637 Semantics "t '==>' t'" not
+R1622 Syntax <> tm_distrust constr
+R1641 Syntax <> tm_distrust constr
+R1611 Semantics "t '==>' t'" not
+R1713 Semantics "t '==>' t'" not
+R1701 Syntax <> tm_check constr
+R1717 Syntax <> tm_check constr
+R1690 Semantics "t '==>' t'" not
+R1777 Semantics "t '==>' t'" not
+R1766 Syntax <> tm_trust constr
+R1755 Semantics <> value def
+R1836 Semantics "t '==>' t'" not
+R1822 Syntax <> tm_distrust constr
+R1811 Semantics <> value def
+R1889 Semantics "t '==>' t'" not
+R1878 Syntax <> tm_check constr
+R1867 Semantics <> value def
+R1922 Semantics <> step ind
+prf 1967 <> value_dont_step
+R2006 Coq.Init.Logic "~ x" not
+R2008 Coq.Init.Logic "'exists' x , p" not
+R2021 Semantics "t '==>' t'" not
+R1995 Semantics <> value def
+prf 2053 <> step_deterministic
+R2127 Coq.Init.Logic "x = y" not
+R2113 Semantics "t '==>' t'" not
+R2089 Semantics "t '==>' t'" not

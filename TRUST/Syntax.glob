@@ -1,0 +1,43 @@
+FSyntax
+R16 SfLib <> <> lib
+R22 Ty <> <> lib
+ind 86 <> term
+constr 105 <> tm_false
+constr 125 <> tm_true
+constr 144 <> tm_if
+constr 185 <> tm_var
+constr 209 <> tm_app
+constr 243 <> tm_abs
+constr 281 <> tm_trust
+constr 309 <> tm_distrust
+constr 340 <> tm_check
+R116 Syntax <> term ind
+R135 Syntax <> term ind
+R176 Syntax <> term ind
+R168 Syntax <> term ind
+R160 Syntax <> term ind
+R152 Syntax <> term ind
+R200 Syntax <> term ind
+R194 SfLib <> id ind
+R234 Syntax <> term ind
+R226 Syntax <> term ind
+R218 Syntax <> term ind
+R272 Syntax <> term ind
+R264 Syntax <> term ind
+R258 Ty <> ty ind
+R252 SfLib <> id ind
+R300 Syntax <> term ind
+R292 Syntax <> term ind
+R331 Syntax <> term ind
+R323 Syntax <> term ind
+R359 Syntax <> term ind
+R351 Syntax <> term ind
+R443 Coq.Strings.String "" not
+R467 Coq.Strings.String "" not
+R490 Coq.Strings.String "" not
+R523 Coq.Strings.String "" not
+R545 Coq.Strings.String "" not
+R568 Coq.Strings.String "" not
+R601 Coq.Strings.String "" not
+R625 Coq.Strings.String "" not
+R652 Coq.Strings.String "" not

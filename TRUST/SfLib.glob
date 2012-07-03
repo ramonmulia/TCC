@@ -1,0 +1,339 @@
+FSfLib
+R489 Coq.omega.Omega <> <> lib
+R555 Coq.Bool.Bool <> <> lib
+R576 Coq.Lists.List <> <> lib
+R597 Coq.Arith.Arith <> <> lib
+R619 Coq.Arith.EqNat <> <> lib
+def 714 <> admit
+R755 Coq.Strings.String <> <> lib
+R964 Coq.Init.Logic "x = y" not
+def 1733 <> ble_nat
+R1748 Coq.Init.Datatypes <> nat ind
+R1755 Coq.Init.Datatypes <> bool ind
+R1782 Coq.Init.Datatypes <> O constr
+R1787 Coq.Init.Datatypes <> true constr
+R1796 Coq.Init.Datatypes <> S constr
+R1831 Coq.Init.Datatypes <> O constr
+R1836 Coq.Init.Datatypes <> false constr
+R1850 Coq.Init.Datatypes <> S constr
+R1858 SfLib <> ble_nat def
+prf 1898 <> andb_true_elim1
+R1951 Coq.Init.Logic "x = y" not
+R1953 Coq.Init.Datatypes <> true constr
+R1939 Coq.Init.Logic "x = y" not
+R1930 Coq.Init.Datatypes <> andb def
+R1941 Coq.Init.Datatypes <> true constr
+R2003 Coq.Strings.String "" not
+R2003 Coq.Strings.String "" not
+R2039 Coq.Strings.String "" not
+R2039 Coq.Strings.String "" not
+prf 2098 <> andb_true_elim2
+R2151 Coq.Init.Logic "x = y" not
+R2153 Coq.Init.Datatypes <> true constr
+R2139 Coq.Init.Logic "x = y" not
+R2130 Coq.Init.Datatypes <> andb def
+R2141 Coq.Init.Datatypes <> true constr
+R2201 Coq.Strings.String "" not
+R2201 Coq.Strings.String "" not
+R2226 Coq.Strings.String "" not
+R2226 Coq.Strings.String "" not
+prf 2276 <> beq_nat_sym
+R2324 Coq.Init.Logic "x = y" not
+R2312 Coq.Arith.EqNat <> beq_nat def
+R2326 Coq.Arith.EqNat <> beq_nat def
+R2304 Coq.Init.Datatypes <> nat ind
+R2304 Coq.Init.Datatypes <> nat ind
+R2456 Coq.Lists.List <> nil constr
+R2491 Coq.Lists.List <> cons constr
+R2502 Coq.Lists.List <> cons constr
+R2509 SfLib "[ ]" not
+R2540 Coq.Lists.List <> app def
+ind 2641 <> ev
+constr 2665 <> ev_0
+constr 2681 <> ev_SS
+R2646 Coq.Init.Datatypes <> nat ind
+R2672 SfLib <> ev ind
+R2675 Coq.Init.Datatypes <> O constr
+R2711 SfLib <> ev ind
+R2715 Coq.Init.Datatypes <> S constr
+R2718 Coq.Init.Datatypes <> S constr
+R2703 SfLib <> ev ind
+R2698 Coq.Init.Datatypes <> nat ind
+prf 2757 <> andb_true
+R2811 Coq.Init.Logic "A /\ B" not
+R2804 Coq.Init.Logic "x = y" not
+R2806 Coq.Init.Datatypes <> true constr
+R2816 Coq.Init.Logic "x = y" not
+R2818 Coq.Init.Datatypes <> true constr
+R2792 Coq.Init.Logic "x = y" not
+R2783 Coq.Init.Datatypes <> andb def
+R2794 Coq.Init.Datatypes <> true constr
+R2889 Coq.Init.Logic <> conj constr
+R2889 Coq.Init.Logic <> conj constr
+prf 2972 <> ex_falso_quodlibet
+R3012 Coq.Init.Logic <> False ind
+prf 3085 <> not_eq_beq_false
+R3157 Coq.Init.Logic "x = y" not
+R3144 Coq.Arith.EqNat <> beq_nat def
+R3159 Coq.Init.Datatypes <> false constr
+R3130 Coq.Init.Logic "x <> y" not
+R3118 Coq.Init.Datatypes <> nat ind
+R3118 Coq.Init.Datatypes <> nat ind
+R3246 Coq.Strings.String "" not
+R3246 Coq.Strings.String "" not
+R3265 Coq.Strings.String "" not
+R3265 Coq.Strings.String "" not
+R3316 SfLib <> ex_falso_quodlibet thm
+R3316 SfLib <> ex_falso_quodlibet thm
+R3385 Coq.Strings.String "" not
+R3385 Coq.Strings.String "" not
+R3467 Coq.Strings.String "" not
+R3467 Coq.Strings.String "" not
+R3490 Coq.Strings.String "" not
+R3490 Coq.Strings.String "" not
+R3545 Coq.Strings.String "" not
+R3545 Coq.Strings.String "" not
+prf 3741 <> ev_not_ev_S
+R3775 Coq.Init.Logic "~ x" not
+R3777 SfLib <> ev ind
+R3781 Coq.Init.Datatypes <> S constr
+R3767 SfLib <> ev ind
+R3842 Coq.Strings.String "" not
+R3842 Coq.Strings.String "" not
+R3884 Coq.Strings.String "" not
+R3884 Coq.Strings.String "" not
+prf 3973 <> O_le_n
+R3996 Coq.Init.Peano "n <= m" not
+R3994 Coq.Init.Datatypes "" not
+R4060 Coq.Init.Peano <> le_S constr
+R4046 Coq.Init.Peano <> le_n constr
+R4046 Coq.Init.Peano <> le_n constr
+R4046 Coq.Init.Peano <> le_n constr
+R4060 Coq.Init.Peano <> le_S constr
+prf 4098 <> n_le_m__Sn_le_Sm
+R4145 Coq.Init.Peano "n <= m" not
+R4141 Coq.Init.Datatypes <> S constr
+R4148 Coq.Init.Datatypes <> S constr
+R4133 Coq.Init.Peano "n <= m" not
+R4206 Coq.Strings.String "" not
+R4206 Coq.Strings.String "" not
+R4252 Coq.Strings.String "" not
+R4252 Coq.Strings.String "" not
+R4283 Coq.Init.Peano <> le_n constr
+R4283 Coq.Init.Peano <> le_n constr
+R4299 Coq.Strings.String "" not
+R4299 Coq.Strings.String "" not
+R4339 Coq.Init.Peano <> le_S constr
+R4339 Coq.Init.Peano <> le_S constr
+R4375 SfLib <> O_le_n thm
+R4375 SfLib <> O_le_n thm
+R4390 Coq.Strings.String "" not
+R4390 Coq.Strings.String "" not
+R4453 Coq.Strings.String "" not
+R4453 Coq.Strings.String "" not
+R4491 Coq.Strings.String "" not
+R4491 Coq.Strings.String "" not
+R4558 Coq.Init.Peano <> le_n constr
+R4558 Coq.Init.Peano <> le_n constr
+R4576 Coq.Init.Peano <> le_S constr
+R4576 Coq.Init.Peano <> le_S constr
+prf 4630 <> ble_nat_true
+R4683 Coq.Init.Peano "n <= m" not
+R4671 Coq.Init.Logic "x = y" not
+R4659 SfLib <> ble_nat def
+R4673 Coq.Init.Datatypes <> true constr
+R4728 Coq.Strings.String "" not
+R4728 Coq.Strings.String "" not
+R4765 SfLib <> O_le_n thm
+R4765 SfLib <> O_le_n thm
+R4780 Coq.Strings.String "" not
+R4780 Coq.Strings.String "" not
+R4843 Coq.Strings.String "" not
+R4843 Coq.Strings.String "" not
+R4898 Coq.Strings.String "" not
+R4898 Coq.Strings.String "" not
+R4962 SfLib <> n_le_m__Sn_le_Sm thm
+R4962 SfLib <> n_le_m__Sn_le_Sm thm
+prf 5007 <> Sn_le_Sm__n_le_m
+R5056 Coq.Init.Peano "n <= m" not
+R5044 Coq.Init.Peano "n <= m" not
+R5040 Coq.Init.Datatypes <> S constr
+R5047 Coq.Init.Datatypes <> S constr
+R5141 Coq.Strings.String "" not
+R5141 Coq.Strings.String "" not
+R5202 Coq.Strings.String "" not
+R5202 Coq.Strings.String "" not
+R5232 Coq.Init.Peano <> le_n constr
+R5232 Coq.Init.Peano <> le_n constr
+R5248 Coq.Strings.String "" not
+R5248 Coq.Strings.String "" not
+R5309 Coq.Strings.String "" not
+R5309 Coq.Strings.String "" not
+R5378 Coq.Init.Peano <> le_n constr
+R5378 Coq.Init.Peano <> le_n constr
+R5394 Coq.Init.Peano <> le_S constr
+R5394 Coq.Init.Peano <> le_S constr
+prf 5443 <> ble_nat_false
+R5496 Coq.Init.Logic "~ x" not
+R5500 Coq.Init.Peano "n <= m" not
+R5485 Coq.Init.Logic "x = y" not
+R5473 SfLib <> ble_nat def
+R5487 Coq.Init.Datatypes <> false constr
+R5546 Coq.Strings.String "" not
+R5546 Coq.Strings.String "" not
+R5605 Coq.Strings.String "" not
+R5605 Coq.Strings.String "" not
+R5657 Coq.Strings.String "" not
+R5657 Coq.Strings.String "" not
+R5718 Coq.Strings.String "" not
+R5718 Coq.Strings.String "" not
+R5781 Coq.Strings.String "" not
+R5781 Coq.Strings.String "" not
+R5869 Coq.Strings.String "" not
+R5869 Coq.Strings.String "" not
+R5957 SfLib <> Sn_le_Sm__n_le_m thm
+R5957 SfLib <> Sn_le_Sm__n_le_m thm
+ind 6018 <> appears_in
+constr 6063 <> ai_here
+constr 6105 <> ai_later
+R6034 Coq.Init.Datatypes <> nat ind
+R6041 Coq.Lists.List <> list ind
+R6046 Coq.Init.Datatypes <> nat ind
+R6083 SfLib <> appears_in ind
+R6098 Coq.Lists.List "x :: y" not
+R6146 SfLib <> appears_in ind
+R6161 Coq.Lists.List "x :: y" not
+R6128 SfLib <> appears_in ind
+def 6180 <> relation
+def 6229 <> partial_function
+R6320 Coq.Init.Logic "x = y" not
+R6260 SfLib <> relation def
+def 6339 <> transitive_relation
+R6417 Coq.Init.Logic "A /\ B" not
+R6375 SfLib <> relation def
+ind 6447 <> next_nat
+constr 6485 <> nn
+R6459 Coq.Init.Datatypes <> nat ind
+R6466 Coq.Init.Datatypes <> nat ind
+R6490 SfLib <> next_nat ind
+R6502 Coq.Init.Datatypes <> S constr
+ind 6519 <> total_relation
+constr 6560 <> tot
+R6543 Coq.Init.Datatypes <> nat ind
+R6536 Coq.Init.Datatypes <> nat ind
+R6584 SfLib <> total_relation ind
+R6579 Coq.Init.Datatypes <> nat ind
+R6579 Coq.Init.Datatypes <> nat ind
+ind 6615 <> empty_relation
+R6639 Coq.Init.Datatypes <> nat ind
+R6632 Coq.Init.Datatypes <> nat ind
+ind 6667 <> refl_step_closure
+constr 6763 <> rsc_refl
+constr 6838 <> rsc_step
+R6698 SfLib <> relation def
+R6808 SfLib <> refl_step_closure ind
+R6967 SfLib <> refl_step_closure ind
+R6918 SfLib <> refl_step_closure ind
+R7013 SfLib <> refl_step_closure ind
+R7118 Coq.Strings.String "" not
+R7142 Coq.Strings.String "" not
+prf 7165 <> rsc_R
+R7231 SfLib <> refl_step_closure ind
+R7192 SfLib <> relation def
+R7291 SfLib <> rsc_step constr
+R7291 SfLib <> rsc_step constr
+R7323 SfLib <> rsc_refl constr
+R7323 SfLib <> rsc_refl constr
+prf 7349 <> rsc_trans
+R7481 SfLib <> refl_step_closure ind
+R7448 SfLib <> refl_step_closure ind
+R7414 SfLib <> refl_step_closure ind
+R7383 SfLib <> relation def
+R7618 SfLib <> rsc_step constr
+R7618 SfLib <> rsc_step constr
+ind 7718 <> id
+constr 7734 <> Id
+R7746 SfLib <> id ind
+R7739 Coq.Init.Datatypes <> nat ind
+def 7762 <> beq_id
+R7788 Coq.Init.Datatypes "( x , y , .. , z )" not
+R7808 Coq.Init.Datatypes "( x , y , .. , z )" not
+R7809 SfLib <> Id constr
+R7816 SfLib <> Id constr
+R7826 Coq.Arith.EqNat <> beq_nat def
+prf 7856 <> beq_id_refl
+R7887 Coq.Init.Logic "x = y" not
+R7882 Coq.Init.Datatypes <> true constr
+R7889 SfLib <> beq_id def
+R7938 Coq.Arith.EqNat <> beq_nat_refl thm
+R7938 Coq.Arith.EqNat <> beq_nat_refl thm
+prf 7967 <> beq_id_eq
+R8021 Coq.Init.Logic "x = y" not
+R8000 Coq.Init.Logic "x = y" not
+R7995 Coq.Init.Datatypes <> true constr
+R8002 SfLib <> beq_id def
+R8088 Coq.Arith.EqNat <> beq_nat_eq def
+R8088 Coq.Arith.EqNat <> beq_nat_eq def
+prf 8142 <> beq_id_false_not_eq
+R8207 Coq.Init.Logic "x <> y" not
+R8193 Coq.Init.Logic "x = y" not
+R8180 SfLib <> beq_id def
+R8195 Coq.Init.Datatypes <> false constr
+R8275 Coq.Arith.EqNat <> beq_nat_false thm
+R8275 Coq.Arith.EqNat <> beq_nat_false thm
+prf 8357 <> not_eq_beq_id_false
+R8420 Coq.Init.Logic "x = y" not
+R8407 SfLib <> beq_id def
+R8422 Coq.Init.Datatypes <> false constr
+R8398 Coq.Init.Logic "x <> y" not
+R8494 Coq.Init.Logic "x <> y" not
+R8494 Coq.Init.Logic "x <> y" not
+R8553 SfLib <> not_eq_beq_false thm
+R8553 SfLib <> not_eq_beq_false thm
+prf 8598 <> beq_id_sym
+R8639 Coq.Init.Logic "x = y" not
+R8626 SfLib <> beq_id def
+R8641 SfLib <> beq_id def
+R8710 SfLib <> beq_nat_sym thm
+R8710 SfLib <> beq_nat_sym thm
+def 8741 <> partial_map
+R8771 Coq.Init.Datatypes <> option ind
+R8765 SfLib <> id ind
+def 8793 <> empty
+R8810 SfLib <> partial_map def
+R8837 Coq.Init.Datatypes <> None constr
+def 8857 <> extend
+R8930 SfLib <> beq_id def
+R8947 Coq.Init.Datatypes <> Some constr
+R8900 SfLib <> id ind
+R8882 SfLib <> partial_map def
+prf 8976 <> extend_eq
+R9046 Coq.Init.Logic "x = y" not
+R9027 SfLib <> extend def
+R9048 Coq.Init.Datatypes <> Some constr
+R9004 SfLib <> partial_map def
+R9099 SfLib <> beq_id_refl thm
+R9099 SfLib <> beq_id_refl thm
+prf 9130 <> extend_neq
+R9233 Coq.Init.Logic "x = y" not
+R9212 SfLib <> extend def
+R9198 Coq.Init.Logic "x = y" not
+R9185 SfLib <> beq_id def
+R9200 Coq.Init.Datatypes <> false constr
+R9159 SfLib <> partial_map def
+prf 9305 <> extend_shadow
+R9403 Coq.Init.Logic "x = y" not
+R9367 SfLib <> extend def
+R9375 SfLib <> extend def
+R9405 SfLib <> extend def
+R9337 SfLib <> partial_map def
+R9479 SfLib <> beq_id def
+R9479 SfLib <> beq_id def
+def 10156 <> eq_id_dec
+R10188 Coq.Init.Specif "{ A } + { B }" not
+R10191 Coq.Init.Logic "x = y" not
+R10202 Coq.Init.Logic "x <> y" not
+R10183 SfLib <> id ind
+R10183 SfLib <> id ind
+R10224 Coq.Arith.Peano_dec <> eq_nat_dec thm
+R10224 Coq.Arith.Peano_dec <> eq_nat_dec thm

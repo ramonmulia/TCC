@@ -1,0 +1,298 @@
+FTypeSystem
+R16 SfLib <> <> lib
+R22 Syntax <> <> lib
+R29 Ty <> <> lib
+R32 Subtype <> <> lib
+R40 Semantics <> <> lib
+ind 131 <> has_type
+constr 179 <> T_True
+constr 241 <> T_False
+constr 305 <> T_Var
+constr 389 <> T_Abs
+constr 527 <> T_App
+constr 740 <> T_If
+constr 922 <> T_Trust
+constr 1037 <> T_Untrust
+constr 1159 <> T_Check
+constr 1282 <> T_Sub
+R161 Ty <> ty ind
+R153 Syntax <> term ind
+R142 Ty <> context def
+R200 TypeSystem <> has_type ind
+R222 Ty <> ty_bool constr
+R230 Ty <> Trust constr
+R213 Syntax <> tm_true constr
+R263 TypeSystem <> has_type ind
+R286 Ty <> ty_bool constr
+R294 Ty <> Trust constr
+R276 Syntax <> tm_false constr
+R358 TypeSystem <> has_type ind
+R372 Syntax <> tm_var constr
+R345 Coq.Init.Logic "x = y" not
+R347 Coq.Init.Datatypes <> Some constr
+R473 TypeSystem <> has_type ind
+R504 Ty <> arrow constr
+R516 Ty <> Trust constr
+R487 Syntax <> tm_abs constr
+R429 TypeSystem <> has_type ind
+R439 SfLib <> extend def
+R687 TypeSystem <> has_type ind
+R716 Subtype <> update_secty def
+R701 Syntax <> tm_app constr
+R655 Subtype <> subtype ind
+R623 TypeSystem <> has_type ind
+R577 TypeSystem <> has_type ind
+R594 Ty <> arrow constr
+R886 TypeSystem <> has_type ind
+R900 Syntax <> tm_if constr
+R852 TypeSystem <> has_type ind
+R819 TypeSystem <> has_type ind
+R780 TypeSystem <> has_type ind
+R797 Ty <> ty_bool constr
+R984 TypeSystem <> has_type ind
+R1011 Subtype <> update_secty def
+R1026 Ty <> Trust constr
+R998 Syntax <> tm_trust constr
+R956 TypeSystem <> has_type ind
+R1101 TypeSystem <> has_type ind
+R1131 Subtype <> update_secty def
+R1146 Ty <> Untrust constr
+R1115 Syntax <> tm_distrust constr
+R1073 TypeSystem <> has_type ind
+R1250 TypeSystem <> has_type ind
+R1264 Syntax <> tm_check constr
+R1231 Coq.Init.Logic "x = y" not
+R1221 Subtype <> sectyof def
+R1233 Ty <> Trust constr
+R1193 TypeSystem <> has_type ind
+R1374 TypeSystem <> has_type ind
+R1345 Subtype <> subtype ind
+R1317 TypeSystem <> has_type ind
+R1513 Coq.Strings.String "" not
+R1536 Coq.Strings.String "" not
+R1561 Coq.Strings.String "" not
+R1595 Coq.Strings.String "" not
+R1618 Coq.Strings.String "" not
+R1643 Coq.Strings.String "" not
+R1677 Coq.Strings.String "" not
+R1700 Coq.Strings.String "" not
+R1725 Coq.Strings.String "" not
+R1759 Coq.Strings.String "" not
+prf 1845 <> sub_inversion_base
+R1906 Coq.Init.Logic "'exists' x , p" not
+R1935 Coq.Init.Logic "A /\ B" not
+R1917 Subtype <> sec_ordering ind
+R1940 Coq.Init.Logic "x = y" not
+R1943 Ty <> ty_bool constr
+R1881 Subtype <> subtype ind
+R1892 Ty <> ty_bool constr
+prf 1991 <> sub_inversion_basel
+R2052 Coq.Init.Logic "'exists' x , p" not
+R2081 Coq.Init.Logic "A /\ B" not
+R2063 Subtype <> sec_ordering ind
+R2086 Coq.Init.Logic "x = y" not
+R2089 Ty <> ty_bool constr
+R2027 Subtype <> subtype ind
+R2036 Ty <> ty_bool constr
+prf 2126 <> sub_inversion_arrow
+R2202 Coq.Init.Logic "'exists' x , p" not
+R2213 Coq.Init.Logic "'exists' x , p" not
+R2225 Coq.Init.Logic "'exists' x , p" not
+R2266 Coq.Init.Logic "A /\ B" not
+R2245 Coq.Init.Logic "x = y" not
+R2248 Ty <> arrow constr
+R2284 Coq.Init.Logic "A /\ B" not
+R2269 Subtype <> subtype ind
+R2302 Coq.Init.Logic "A /\ B" not
+R2287 Subtype <> subtype ind
+R2305 Subtype <> sec_ordering ind
+R2169 Subtype <> subtype ind
+R2180 Ty <> arrow constr
+prf 2380 <> canonical_forms_arrows
+R2478 Coq.Init.Logic "'exists' x , p" not
+R2488 Coq.Init.Logic "'exists' x , p" not
+R2499 Coq.Init.Logic "'exists' x , p" not
+R2516 Coq.Init.Logic "x = y" not
+R2518 Syntax <> tm_abs constr
+R2465 Semantics <> value def
+R2429 TypeSystem <> has_type ind
+R2445 Ty <> arrow constr
+prf 2569 <> canonical_forms_bool
+R2669 Coq.Init.Logic "A \/ B" not
+R2659 Coq.Init.Logic "x = y" not
+R2661 Syntax <> tm_true constr
+R2674 Coq.Init.Logic "x = y" not
+R2676 Syntax <> tm_false constr
+R2646 Semantics <> value def
+R2611 TypeSystem <> has_type ind
+R2627 Ty <> ty_bool constr
+prf 2740 <> progress
+R2800 Coq.Init.Logic "A \/ B" not
+R2792 Semantics <> value def
+R2803 Coq.Init.Logic "'exists' x , p" not
+R2816 Semantics "t '==>' t'" not
+R2766 TypeSystem <> has_type ind
+R2775 SfLib <> empty def
+prf 2908 <> typing_inversion_abs
+R2995 Coq.Init.Logic "'exists' x , p" not
+R3037 Coq.Init.Logic "A /\ B" not
+R3007 Subtype <> subtype ind
+R3016 Ty <> arrow constr
+R3028 Ty <> Trust constr
+R3046 TypeSystem <> has_type ind
+R3056 SfLib <> extend def
+R2956 TypeSystem <> has_type ind
+R2970 Syntax <> tm_abs constr
+prf 3115 <> typing_inversion_var
+R3190 Coq.Init.Logic "'exists' x , p" not
+R3215 Coq.Init.Logic "A /\ B" not
+R3206 Coq.Init.Logic "x = y" not
+R3208 Coq.Init.Datatypes <> Some constr
+R3218 Subtype <> subtype ind
+R3157 TypeSystem <> has_type ind
+R3171 Syntax <> tm_var constr
+prf 3266 <> typing_inversion_true
+R3337 Subtype <> subtype ind
+R3346 Ty <> ty_bool constr
+R3354 Ty <> Trust constr
+R3307 TypeSystem <> has_type ind
+R3320 Syntax <> tm_true constr
+prf 3399 <> typing_inversion_false
+R3471 Subtype <> subtype ind
+R3480 Ty <> ty_bool constr
+R3488 Ty <> Trust constr
+R3440 TypeSystem <> has_type ind
+R3453 Syntax <> tm_false constr
+prf 3533 <> typing_inversion_app
+R3617 Coq.Init.Logic "'exists' x , p" not
+R3628 Coq.Init.Logic "'exists' x , p" not
+R3640 Coq.Init.Logic "'exists' x , p" not
+R3689 Coq.Init.Logic "A /\ B" not
+R3657 TypeSystem <> has_type ind
+R3674 Ty <> arrow constr
+R3712 Coq.Init.Logic "A /\ B" not
+R3692 TypeSystem <> has_type ind
+R3730 Coq.Init.Logic "A /\ B" not
+R3715 Subtype <> subtype ind
+R3744 Coq.Init.Logic "x = y" not
+R3733 Subtype <> sectyof def
+R3746 Subtype <> sectyof def
+R3755 Subtype <> update_secty def
+R3579 TypeSystem <> has_type ind
+R3593 Syntax <> tm_app constr
+prf 3810 <> typing_inversion_trust
+R3889 Coq.Init.Logic "'exists' x , p" not
+R3918 Coq.Init.Logic "A /\ B" not
+R3900 TypeSystem <> has_type ind
+R3921 Subtype <> subtype ind
+R3930 Subtype <> update_secty def
+R3946 Ty <> Trust constr
+R3854 TypeSystem <> has_type ind
+R3868 Syntax <> tm_trust constr
+prf 3991 <> typing_inversion_distrust
+R4075 Coq.Init.Logic "'exists' x , p" not
+R4104 Coq.Init.Logic "A /\ B" not
+R4086 TypeSystem <> has_type ind
+R4107 Subtype <> subtype ind
+R4116 Subtype <> update_secty def
+R4132 Ty <> Untrust constr
+R4037 TypeSystem <> has_type ind
+R4051 Syntax <> tm_distrust constr
+prf 4179 <> typing_inversion_check
+R4258 Coq.Init.Logic "'exists' x , p" not
+R4287 Coq.Init.Logic "A /\ B" not
+R4269 TypeSystem <> has_type ind
+R4303 Coq.Init.Logic "A /\ B" not
+R4290 Subtype <> subtype ind
+R4317 Coq.Init.Logic "x = y" not
+R4306 Subtype <> sectyof def
+R4319 Ty <> Trust constr
+R4223 TypeSystem <> has_type ind
+R4237 Syntax <> tm_check constr
+prf 4361 <> typing_inversion_if
+R4447 Coq.Init.Logic "'exists' x , p" not
+R4485 Coq.Init.Logic "A /\ B" not
+R4457 TypeSystem <> has_type ind
+R4474 Ty <> ty_bool constr
+R4506 Coq.Init.Logic "A /\ B" not
+R4488 TypeSystem <> has_type ind
+R4509 TypeSystem <> has_type ind
+R4408 TypeSystem <> has_type ind
+R4422 Syntax <> tm_if constr
+prf 4563 <> abs_arrow
+R4675 Coq.Init.Logic "A /\ B" not
+R4661 Subtype <> subtype ind
+R4678 TypeSystem <> has_type ind
+R4688 SfLib <> extend def
+R4695 SfLib <> empty def
+R4606 TypeSystem <> has_type ind
+R4639 Ty <> arrow constr
+R4622 Syntax <> tm_abs constr
+R4615 SfLib <> empty def
+ind 4781 <> appears_free_in
+constr 4825 <> afi_var
+constr 4878 <> afi_app1
+constr 4997 <> afi_app2
+constr 5116 <> afi_abs
+constr 5242 <> afi_if1
+constr 5367 <> afi_if2
+constr 5492 <> afi_if3
+constr 5617 <> afi_trust
+constr 5727 <> afi_distrust
+constr 5846 <> afi_check
+R4805 Syntax <> term ind
+R4799 SfLib <> id ind
+R4845 TypeSystem <> appears_free_in ind
+R4864 Syntax <> tm_var constr
+R4960 TypeSystem <> appears_free_in ind
+R4979 Syntax <> tm_app constr
+R4905 TypeSystem <> appears_free_in ind
+R5079 TypeSystem <> appears_free_in ind
+R5098 Syntax <> tm_app constr
+R5024 TypeSystem <> appears_free_in ind
+R5205 TypeSystem <> appears_free_in ind
+R5224 Syntax <> tm_abs constr
+R5152 TypeSystem <> appears_free_in ind
+R5144 Coq.Init.Logic "x <> y" not
+R5328 TypeSystem <> appears_free_in ind
+R5347 Syntax <> tm_if constr
+R5271 TypeSystem <> appears_free_in ind
+R5453 TypeSystem <> appears_free_in ind
+R5472 Syntax <> tm_if constr
+R5396 TypeSystem <> appears_free_in ind
+R5578 TypeSystem <> appears_free_in ind
+R5597 Syntax <> tm_if constr
+R5521 TypeSystem <> appears_free_in ind
+R5692 TypeSystem <> appears_free_in ind
+R5711 Syntax <> tm_trust constr
+R5641 TypeSystem <> appears_free_in ind
+R5808 TypeSystem <> appears_free_in ind
+R5827 Syntax <> tm_distrust constr
+R5754 TypeSystem <> appears_free_in ind
+R5921 TypeSystem <> appears_free_in ind
+R5940 Syntax <> tm_check constr
+R5870 TypeSystem <> appears_free_in ind
+prf 5998 <> context_invariance
+R6123 TypeSystem <> has_type ind
+R6106 Coq.Init.Logic "x = y" not
+R6077 TypeSystem <> appears_free_in ind
+R6042 TypeSystem <> has_type ind
+prf 6177 <> free_in_context
+R6270 Coq.Init.Logic "'exists' x , p" not
+R6287 Coq.Init.Logic "x = y" not
+R6289 Coq.Init.Datatypes <> Some constr
+R6246 TypeSystem <> has_type ind
+R6219 TypeSystem <> appears_free_in ind
+prf 6361 <> substitution_preserves_typing
+R6489 TypeSystem <> has_type ind
+R6505 Semantics <> subst def
+R6463 TypeSystem <> has_type ind
+R6472 SfLib <> empty def
+R6424 TypeSystem <> has_type ind
+R6434 SfLib <> extend def
+prf 6585 <> preservation
+R6656 TypeSystem <> has_type ind
+R6665 SfLib <> empty def
+R6646 Semantics "t '==>' t'" not
+R6618 TypeSystem <> has_type ind
+R6627 SfLib <> empty def

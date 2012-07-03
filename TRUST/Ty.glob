@@ -1,0 +1,29 @@
+FTy
+R44 SfLib <> <> lib
+ind 62 <> secty
+constr 78 <> Trust
+constr 94 <> Untrust
+constr 112 <> DontCare
+R86 Ty <> secty ind
+R104 Ty <> secty ind
+R123 Ty <> secty ind
+def 142 <> secty_eq_dec
+R180 Coq.Init.Specif "{ A } + { B }" not
+R183 Coq.Init.Logic "x = y" not
+R194 Coq.Init.Logic "x <> y" not
+R172 Ty <> secty ind
+R172 Ty <> secty ind
+ind 243 <> ty
+constr 260 <> ty_bool
+constr 286 <> arrow
+R279 Ty <> ty ind
+R270 Ty <> secty ind
+R315 Ty <> ty ind
+R306 Ty <> secty ind
+R300 Ty <> ty ind
+R294 Ty <> ty ind
+R395 Coq.Strings.String "" not
+R415 Coq.Strings.String "" not
+def 437 <> context
+R448 SfLib <> partial_map def
+R460 Ty <> ty ind

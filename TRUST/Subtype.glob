@@ -1,0 +1,73 @@
+FSubtype
+R15 SfLib <> <> lib
+R21 Ty <> <> lib
+ind 82 <> sec_ordering
+constr 127 <> so_untrustdontcare
+constr 183 <> so_trustuntrust
+constr 232 <> so_trustdontcare
+constr 283 <> so_trustT
+constr 330 <> so_refl
+R106 Ty <> secty ind
+R97 Ty <> secty ind
+R148 Subtype <> sec_ordering ind
+R169 Ty <> DontCare constr
+R161 Ty <> Untrust constr
+R201 Subtype <> sec_ordering ind
+R220 Ty <> Untrust constr
+R214 Ty <> Trust constr
+R251 Subtype <> sec_ordering ind
+R270 Ty <> DontCare constr
+R264 Ty <> Trust constr
+R305 Subtype <> sec_ordering ind
+R318 Ty <> Trust constr
+R350 Subtype <> sec_ordering ind
+ind 379 <> subtype
+constr 413 <> s_base
+constr 493 <> s_arrow
+R395 Ty <> ty ind
+R389 Ty <> ty ind
+R456 Subtype <> subtype ind
+R477 Ty <> ty_bool constr
+R465 Ty <> ty_bool constr
+R435 Subtype <> sec_ordering ind
+R645 Subtype <> subtype ind
+R671 Ty <> arrow constr
+R654 Ty <> arrow constr
+R609 Subtype <> sec_ordering ind
+R577 Subtype <> subtype ind
+R545 Subtype <> subtype ind
+R771 Coq.Strings.String "" not
+R793 Coq.Strings.String "" not
+def 858 <> sectyof
+R877 Ty <> secty ind
+R907 Ty <> ty_bool constr
+R928 Ty <> arrow constr
+R871 Ty <> ty ind
+def 1004 <> lub_secty
+R1030 Ty <> secty ind
+R1060 Ty <> DontCare constr
+R1072 Ty <> DontCare constr
+R1087 Ty <> Trust constr
+R1107 Ty <> Untrust constr
+R1154 Ty <> DontCare constr
+R1166 Ty <> DontCare constr
+R1197 Ty <> Untrust constr
+R1209 Ty <> Untrust constr
+R1244 Ty <> Trust constr
+R1256 Ty <> Untrust constr
+R1021 Ty <> secty ind
+R1021 Ty <> secty ind
+def 1305 <> update_secty
+R1341 Ty <> ty ind
+R1368 Ty <> ty_bool constr
+R1382 Ty <> ty_bool constr
+R1391 Subtype <> lub_secty def
+R1413 Ty <> arrow constr
+R1429 Ty <> arrow constr
+R1440 Subtype <> lub_secty def
+R1332 Ty <> secty ind
+R1323 Ty <> ty ind
+prf 1471 <> sec_ordering_trans
+R1553 Subtype <> sec_ordering ind
+R1531 Subtype <> sec_ordering ind
+R1509 Subtype <> sec_ordering ind

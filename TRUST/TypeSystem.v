@@ -151,53 +151,52 @@ Lemma canonical_forms_arrows : forall ctx t T1 T2 s,
   exists x, exists S1, exists s2,
     t = tm_abs x S1 s2.
 Proof with eauto.
-intros.
- remember (arrow T1 T2 s) as T.
- has_type_cases (induction H) Case; 
- inversion HeqT; subst; intros; try solve by inversion.
- Case "T_Var".
-    inversion H0.
-    inversion H2. 
-    inversion H2. 
+   intros ctx t T1 T2 s Hty Hv.
+   remember (arrow T1 T2 s) as V.
+   generalize dependent T2 ; revert T1 ; revert s.
+   has_type_cases (induction Hty) Case; 
+  subst; intros; try solve by inversion.
+  Case "T_Var".
+     inversion Hv.
+     inversion H0.
+     inversion H0.
   Case "T_Abs".
-    exists x.
-    exists T1.
-    exists t2.
-    reflexivity.
+      exists x.
+      exists T1.
+      exists t2.
+      reflexivity.
   Case "T_App".
-    inversion H0.
-    inversion H3. 
-    inversion H3.
+      inversion Hv.
+     inversion H0.
+     inversion H0.
   Case "T_If".
-    inversion H0.
-    inversion H4. 
-    inversion H4.
+      inversion Hv.
+     inversion H.
+     inversion H.
   Case "T_Trust".
-    inversion H0.
-    inversion H1.
-    inversion H1.
+     inversion Hv.
+     inversion H.
+     inversion H.
   Case "T_Untrust".
-    inversion H0.
-    inversion H1.
-    inversion H1.
+     inversion Hv.
+     inversion H.
+     inversion H.
   Case "T_Check".
-    inversion H0.
-    inversion H3.
-    inversion H3.
+     inversion Hv.
+     inversion H0.
+     inversion H0.
   Case "T_Sub".
-   destruct T.
-    apply IHhas_type.
-    inversion H1.
-    assumption.
-    apply IHhas_type.
-    apply sub_inversion_arrow in H1.
-    destruct H1 as [s'].
-    destruct H1 as [T1'].
-    destruct H1 as [T2']. 
-    destruct H1.
-    inversion H1. subst.
-    Admitted.
-
+     subst.
+     eapply sub_inversion_arrow in H.
+     destruct H.
+     destruct H.
+     destruct H.
+     destruct H.
+     eapply IHHty.
+     assumption.
+     apply H.
+Qed.
+     
 
 
 Lemma canonical_forms_bool : 
@@ -205,8 +204,9 @@ Lemma canonical_forms_bool :
     value t -> t = tm_true \/ t = tm_false.
 Proof with eauto.
 intros ctx t s Hty Hv.
-  remember (ty_bool s) as T.
-  has_type_cases (induction Hty) Case; 
+   remember (ty_bool s) as V.
+   generalize dependent s.
+   has_type_cases (induction Hty) Case; 
   subst; intros; try solve by inversion.
   Case "T_True".
    left.
@@ -239,11 +239,15 @@ intros ctx t s Hty Hv.
     inversion H0.
     inversion H0.
   Case "T_Sub".
-    apply IHHty.
-    apply sub_inversion_base in H.
-    destruct H as [s'].
+    subst.
+    eapply sub_inversion_base in H.
     destruct H.
-    Admitted.
+    destruct H.
+    eapply IHHty.
+     assumption.
+     apply H0.
+Qed.
+
 
 (** progress *)
 
@@ -698,13 +702,18 @@ Lemma substitution_preserves_typing :
 Proof with eauto.
 Admitted.
 
+
+Hint Resolve update_secty__subtype.
+
 (** preservation **)
 
 Theorem preservation : 
-  forall t t' T, has_type empty t T ->
-    t ==> t' -> has_type empty t' T.
+  forall t t' T,
+    has_type empty t T ->
+    t ==> t' -> 
+    has_type empty t' T.
 Proof with eauto.
-intros t t' T HT.
+ intros t t' T HT.
   remember empty as Gamma. generalize dependent HeqGamma.
   generalize dependent t'.
   has_type_cases (induction HT) Case; 
@@ -712,9 +721,7 @@ intros t t' T HT.
   Case "T_App".
     inversion HE; subst...
     SCase "ST_AppAbs".
-      apply abs_arrow in HT1.
-      destruct HT1.
-      apply substitution_preserves_typing with T.
-Admitted.
-
+      destruct (abs_arrow _ _ _ _ _ _ HT1) as [HA1 HA2].
+      apply substitution_preserves_typing with T...
+Qed.
 

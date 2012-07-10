@@ -78,7 +78,45 @@ Qed.
 
 Remark subtype_trans : forall T1 T2 T3, subtype T1 T2 -> subtype T2 T3 -> subtype T1 T3.
 Proof.
-Admitted.
+intros T1 T2 T3.
+  generalize dependent T1 ; generalize dependent T3.
+  induction T2.
+  intros.
+  inversion H; subst; clear H.
+  inversion H0; subst; clear H0.
+  inversion H3; subst; clear H3.
+  inversion H1; subst; clear H1.
+  constructor. constructor.
+  inversion H1; subst; clear H1.
+  constructor. constructor.
+  constructor. constructor.
+  inversion H1; subst; clear H1.
+  constructor. constructor.
+  inversion H1; subst; clear H1.
+  constructor. constructor.
+  constructor. constructor.
+  constructor. constructor.
+  constructor. constructor.
+  intros.
+  inversion H; subst; clear H.
+  inversion H0; subst; clear H0.
+  constructor.
+  apply IHT2_1.
+  assumption. assumption.
+  apply IHT2_2.
+  assumption. assumption.
+  inversion H9; subst; clear H9.
+  inversion H7; subst; clear H7.
+  constructor. constructor.
+  inversion H7; subst; clear H7.
+  constructor.
+ inversion H7; subst; clear H7.
+  constructor.
+  assumption.
+Qed.
+  
+  
+
 
 
 
